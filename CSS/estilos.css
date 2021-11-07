@@ -18,6 +18,8 @@ General Border-Box reset
 ::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -143,17 +145,6 @@ ANIMATION
 ////////////////////////////////
 */
 
-@-webkit-keyframes grow {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
 @keyframes grow {
   0% {
     transform: scale(0.2);
@@ -161,24 +152,6 @@ ANIMATION
   }
   100% {
     transform: scale(1);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes slideFromRight {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(-200px);
-    opacity: 0.5;
-  }
-  75% {
-    transform: translateX(50);
-    opacity: 0.75;
-  }
-  100% {
-    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -193,24 +166,6 @@ ANIMATION
   }
   75% {
     transform: translateX(50);
-    opacity: 0.75;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes slideFromLeft {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(200px);
-    opacity: 0.5;
-  }
-  75% {
-    transform: translateX(-50);
     opacity: 0.75;
   }
   100% {
@@ -456,14 +411,12 @@ Hero
     margin-top: 5rem;
     margin-bottom: 3rem;
     padding-bottom: 3rem;
-    -webkit-clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
     clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
   }
   .hero-banner h2 {
     font-size: 5rem;
     margin-bottom: 3rem;
     color: var(--clr-white);
-    -webkit-animation: grow 2s ease;
     animation: grow 2s ease;
   }
   .hero-banner p {
@@ -471,12 +424,10 @@ Hero
     font-size: 1.25rem;
     max-width: 35rem;
     margin-bottom: 2rem;
-    -webkit-animation: slideFromLeft 2s ease;
     animation: slideFromLeft 2s ease;
   }
   .hero-banner a {
     font-size: 0.75rem;
-    -webkit-animation: slideFromRight 2s ease;
     animation: slideFromRight 2s ease;
   }
 }
@@ -490,7 +441,6 @@ CARDS
   margin-bottom: 1.5rem;
 }
 .cont-cards {
-  -webkit-clip-path: polygon(50% 0%, 100% 2%, 100% 100%, 0 100%, 0 2%);
   clip-path: polygon(50% 0%, 100% 2%, 100% 100%, 0 100%, 0 2%);
   background: var(--clr-primary-7);
   padding: 3rem 1rem;
@@ -533,7 +483,6 @@ h4 {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
@@ -558,7 +507,6 @@ h4 {
     padding-top: 6rem;
   }
   .cont-cards {
-    -webkit-clip-path: polygon(50% 0%, 100% 3%, 100% 100%, 0 100%, 0 3%);
     clip-path: polygon(50% 0%, 100% 3%, 100% 100%, 0 100%, 0 3%);
     margin-top: 0;
     padding-top: 9rem;
@@ -770,7 +718,6 @@ input[type="number"] {
     margin: auto auto;
     max-height: 5rem;
     max-width: 5rem;
-    -o-object-fit: cover;
     object-fit: cover;
   }
   .cesta1 {
@@ -886,22 +833,6 @@ Form
   border: transparent;
   border-radius: var(--radius);
 }
-.form-control::-webkit-input-placeholder {
-  padding-left: 2rem;
-  font-size: 0.75rem;
-}
-.form-control::-moz-placeholder {
-  padding-left: 2rem;
-  font-size: 0.75rem;
-}
-.form-control:-ms-input-placeholder {
-  padding-left: 2rem;
-  font-size: 0.75rem;
-}
-.form-control::-ms-input-placeholder {
-  padding-left: 2rem;
-  font-size: 0.75rem;
-}
 .form-control::placeholder {
   padding-left: 2rem;
   font-size: 0.75rem;
@@ -969,22 +900,6 @@ select {
 }
 
 @media screen and (min-width: 1026px) {
-  .form-control::-webkit-input-placeholder {
-    text-align: center;
-    padding-left: 0;
-  }
-  .form-control::-moz-placeholder {
-    text-align: center;
-    padding-left: 0;
-  }
-  .form-control:-ms-input-placeholder {
-    text-align: center;
-    padding-left: 0;
-  }
-  .form-control::-ms-input-placeholder {
-    text-align: center;
-    padding-left: 0;
-  }
   .form-control::placeholder {
     text-align: center;
     padding-left: 0;
