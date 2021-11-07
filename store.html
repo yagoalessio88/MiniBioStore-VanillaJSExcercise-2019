@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-Bio Store</title>
+
+    <!-- prototype y scriptaculous -->
+    <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+    <script src="http://script.aculo.us/scriptaculous.js"></script>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!-- estilos css -->
+    <link rel="stylesheet" href="./CSS/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="nav-center">
+          <div class="nav-header">
+            <img class="nav-logo" src="./img/logo2.jpg" />
+            <h2>Mini Bio Store</h2>
+            <button type="button" class="nav-open">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <ul class="nav-links">
+            <div class="nav-close-center">
+              <span class="nav-close">
+                <i class="fas fa-times"></i>
+              </span>
+            </div>
+            <li>
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a class="nav-link" href="store.html">Store</a>
+            </li>
+            <!-- <li>
+              <a class="nav-link" href="explicacion.html">Explicación</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+      
+    <main class="main">
+      <section class="product-quantity-desktop display-none">
+        <article class="product-quantity-desktop-center">
+          <div>
+            <p>Cuántos Kg deseas?</p>
+            <div>
+              <input class="quantity" type="number" step="0.5" value="1">
+            </div>
+            <button class="btn quantity-layer-btn">agregar</button>
+          </div>
+        </article>
+      </section>
+      <section class="products-section">
+        <!-- draggable products -->
+        <div class="products-container">
+          <!-- single product -->
+          <article class="single-product" data-id="0">
+            <div id="capa0" class="capamover">
+              <img src="img/pr1.jpg"  class="capamover product-img" />
+            </div>
+            <div class="product-info" >
+              <p class="product-price">1,00&euro; el Kg</p>
+              <div class="product-quantity">
+                <div>
+                  <input class="quantity" type="number" step="0.5" value="1">
+                </div>
+                <p>Kg</p>
+              </div>
+              <button id="capa0" class="btn">agregar</button>
+            </div>
+          </article>
+          <!-- single product -->
+          <article class="single-product" data-id="1">
+            <div id="capa1" class="capamover">
+              <img src="img/pr2.jpg" class="capamover product-img" />
+            </div>
+            <div class="product-info">
+              <p class="product-price">2,00&euro; el Kg</p>
+              <div class="product-quantity">
+                <div>
+                  <input class="quantity" type="number" step="0.5" value="1">
+                </div>
+                <p>Kg</p>
+              </div>
+              <button id="capa1" class="btn">agregar</button>
+            </div>
+          </article>
+          <!-- single product -->
+          <article class="single-product" data-id="2">
+          <div id="capa2" class="capamover">
+            <img src="img/pr3.jpg" class="capamover product-img" />
+          </div>
+          <div class="product-info">
+            <p class="product-price">1,50&euro; el Kg</p>
+            <div class="product-quantity">
+                <div>
+                  <input class="quantity" type="number" step="0.5" value="1">
+                </div>
+                <p>Kg</p>
+              </div>
+            <button id="capa2" class="btn">agregar</button>
+          </div>
+          </article>
+          <!-- single product -->
+          <article class="single-product" data-id="3">
+            <div id="capa3" class="capamover">
+              <img src="img/pr4.jpg" class="capamover product-img" />
+            </div>
+            <div class="product-info">
+              <p class="product-price">2,50&euro; el Kg</p>
+              <div class="product-quantity">
+                <div>
+                  <input class="quantity" type="number" step="0.5" value="1">
+                </div>
+                <p>Kg</p>
+              </div>
+              <button id="capa3" class="btn">agregar</button>
+            </div>
+          </article>
+          <!-- single product -->
+          <article class="single-product" data-id="4">
+            <div id="capa4" class="capamover">
+              <img src="img/pr5.jpg" class="capamover product-img" />
+            </div>
+            <div class="product-info">
+              <p class="product-price">2,75&euro; el Kg</p>
+              <div class="product-quantity">
+                <div>
+                  <input class="quantity" type="number" step="0.5" value="1">
+                </div>
+                <p>Kg</p>
+              </div>
+              <button id="capa4" class="btn">agregar</button>
+            </div>
+          </article>
+          <!-- single product -->
+          <article class="single-product" data-id="5">
+            <div id="capa5" class="capamover">
+              <img src="img/pr6.jpg" class="capamover product-img" />
+            </div>
+            <div class="product-info">
+              <p class="product-price">1,45&euro; el Kg</p>
+              <div class="product-quantity">
+                <div>
+                  <input class="quantity" type="number" step="0.5" value="1">
+                </div>
+                <p>Kg</p>
+              </div>
+              <button id="capa5" class="btn">agregar</button>
+            </div>
+          </article>
+          <!-- end of draggable products -->
+        </div>
+        <!-- product description -->
+        <article class="product-description">
+          <h3></h3>
+          <p>
+            <small
+              >Posiciona el mouse sobre un producto para ver detalles</small> <br>
+              <small>Arrastra el producto hacia la cesta para agregarlo a tu pedido!</small>
+          </p>
+          <p class="product-price"></p>
+        </article>
+        <!-- end of product description -->
+        <!-- shopping box -->
+        <article class="box-container">
+          <div class="box"><img class="box-img" id="receptor" src="img/cesta1.jpg" /></div>
+          <br />
+          <div id="mi-compra"><h4>Tus productos:</h4></div>
+          <div class="items-container">
+            <!-- single item -->
+            <!-- <article class="single-item">
+              <div class="item-info">
+                <h4>tomate</h4>
+                <p>x 1kg -- 2.4e</p>
+              </div>
+              <div>
+                <a class="item-link edit"><i class="far fa-edit"></i></a>
+                <a class="item-link delete"><i class="far fa-trash-alt"></i></a>
+              </div>
+            </article> -->
+            <!-- end of single item -->
+          </div>
+          <br />
+          <div ><h4 class="total">Total:0,00&euro;</h4><div>
+            <div>
+              <a href="#formulario" class="btn procesar">Procesar pedido</a>
+            </div>
+        </article>
+        
+        <!-- end of shopping box -->
+      </section>
+      <br /><br /><br />
+      <!-- form -->
+      <section class="section-center form-center">
+        <form id="formulario" class="form-section">
+          <div class="form-group">
+            <input class="form-control"
+              id="inputName"
+              type="text"
+              name="nombre"
+              placeholder="Nombre y Apellido"
+            /><br /><br />
+            <input
+            class="form-control"
+              id="inputCalle"
+              type="text"
+              name="calle"
+              placeholder="Calle"
+              />
+              <br /><br />
+              <input class="form-control" placeholder="Número" type="number" /><br /><br />
+            </div>
+            <div class="form-footer">
+              <div class="checkbox">
+                <input
+                type="radio"
+                name="c1"
+                id="c1"
+                />Entrega a domicilio
+              </div>
+              <div class="checkbox">
+                <input
+                type="radio"
+                name="c1"
+                id="c2"
+                />Retiro en local
+              </div>
+            </div>
+          </form>
+          <!--  home delivery -->
+          <section class="order-option">
+            <article class="delivery">
+              <div class="delivery-center">
+                <label class="delivery-form"  for="fecha">Fecha de entrega:</label>
+                <input class="delivery-form" type="date" name="fecha" /><br />
+    
+                <label class="delivery-form"  for="select">Horario de entrega:</label>
+                <select class="delivery-form" name="horario" >
+                  <option value="0">9-10hs</option>
+                  <option value="1">10-11hs</option>
+                  <option value="2">17-18hs</option>
+                  <option value="3">18-19hs</option>
+                </select>
+                <button type="button" class="btn">Enviar orden</button>
+              </div>
+            </article>
+            <!-- end of home delivery -->
+            <!-- pickup -->
+            <article  class="pickup">
+              <h4>Te esperamos en nuestro local!!</h4>
+              <br />
+              <ul>
+                <li>Dirección:  Guillem Tell 14.</li>
+                <li> Horarios: de 9 a 11 y de 17 a 19hs.</li>
+                <li>Dudas? Llamanos! tel.:455-5555</li>
+              </ul>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.668267335839!2d2.146768515051659!3d41.40301007926277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2a196f8fca5%3A0x30ea844ce861b0c0!2sCarrer%20de%20Guillem%20Tell%2C%2014%2C%2008006%20Barcelona!5e0!3m2!1ses!2ses!4v1610198594605!5m2!1ses!2ses"
+                width="300"
+                height="250"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </article>
+            <!-- end of pickup -->
+
+          </section>
+        <!-- end of form -->
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <p>Portfolio web creado por Yago Agüero</p>
+      <a href="https://www.linkedin.com/in/yagoaguero-88"
+        ><i class="fab fa-linkedin icon"></i
+      ></a>
+    </footer>
+    <script type="module" src="./src/pages/store.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-Bio Store</title>
+    <!-- prototype y scriptaculous -->
+    <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+    <script src="http://script.aculo.us/scriptaculous.js"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!-- estilos css -->
+    <link rel="stylesheet" href="./CSS/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="nav-center">
+          <div class="nav-header">
+            <img class="nav-logo" src="./img/logo2.jpg" />
+            <h2>Mini Bio Store</h2>
+            <button type="button" class="nav-open">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+
+          <ul class="nav-links">
+            <div class="nav-close-center">
+              <span class="nav-close">
+                <i class="fas fa-times"></i>
+              </span>
+            </div>
+            <li>
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a class="nav-link" href="store.html">Store</a>
+            </li>
+            <!-- <li>
+              <a class="nav-link" href="explicacion.html">Explicación</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-banner">
+          <h2>Bienvenido!</h2>
+          <p>
+            <b>Mini Bio Store</b> es, mas que un grupo de amigos, una familia!
+            <br />
+            Nuestro objetivo es brindar a la comunidad alimentos orgánicos,
+            saludables, de estación y libres de químicos.
+          </p>
+          <a href="store.html" class="btn">nuestros productos</a>
+        </div>
+      </div>
+      <!-- end of Hero -->
+      <!-- cards -->
+      <section class="cards-section">
+        <!-- section-title -->
+        <div class="section-title">
+          <h2>nuestros <span>clientes</span></h2>
+          <div class="underline"></div>
+        </div>
+        <!-- end of section-title -->
+        <div class="cont-cards">
+          <!-- single-card -->
+          <article class="card">
+            <div class="card-photo">
+              <img class="profilepic" src="./img/clientes/cliente1.jpg" />
+            </div>
+            <div class="card-body">
+              <h4>Carlos Piedrabuena</h4>
+              <div class="underline"></div>
+              <p><i> "Muy atentos. Muy buenos productos."</i></p>
+            </div>
+          </article>
+          <!-- end of single-card -->
+          <!-- single-card -->
+          <article class="card">
+            <div class="card-photo">
+              <img class="profilepic" src="./img/clientes/cliente0.png" />
+            </div>
+            <div class="card-body">
+              <h4>María Castro</h4>
+              <div class="underline"></div>
+              <p><i> "Envíos super rápidos!!!"</i></p>
+            </div>
+          </article>
+          <!-- end of single-card -->
+          <!-- single-card -->
+          <article class="card">
+            <div class="card-photo">
+              <img class="profilepic" src="./img/clientes/cliente4.jpg" />
+            </div>
+            <div class="card-body">
+              <h4>Eva Lola</h4>
+              <div class="underline"></div>
+              <p><i> "Me encantan los productos! super frescos!"</i></p>
+            </div>
+          </article>
+          <!-- end of single-card -->
+          <!-- single-card -->
+          <article class="card">
+            <div class="card-photo">
+              <img class="profilepic" src="./img/clientes/cliente2.jpg" />
+            </div>
+            <div class="card-body">
+              <h4>Ana Laura</h4>
+              <div class="underline"></div>
+              <p><i>"Mi tienda preferida sin dudas!!"</i></p>
+            </div>
+          </article>
+          <!-- end of single-card -->
+          <!-- single-card -->
+          <article class="card">
+            <div class="card-photo">
+              <img class="profilepic" src="./img/clientes/cliente3.jpg" />
+            </div>
+            <div class="card-body">
+              <h4>Fede Barrios</h4>
+              <div class="underline"></div>
+              <p><i> "Por fin una tienda de productos de estación!"</i></p>
+            </div>
+          </article>
+          <!-- end of single-card -->
+          <!-- single-card -->
+          <article class="card">
+            <div class="card-photo">
+              <img class="profilepic" src="./img/clientes/cliente0.png" />
+            </div>
+            <div class="card-body">
+              <h4>Enrique Delgado</h4>
+              <div class="underline"></div>
+              <p><i> "Mi tienda de confianza!"</i></p>
+            </div>
+          </article>
+          <!-- end of single-card -->
+        </div>
+      </section>
+      <!-- end of cards -->
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <p>Portfolio web creado por Yago Agüero</p>
+      <a href="https://www.linkedin.com/in/yagoaguero-88"
+        ><i class="fab fa-linkedin icon"></i
+      ></a>
+    </footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
