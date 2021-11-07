@@ -787,7 +787,7 @@ Form
 .form-center {
   width: 100%;
   background: var(--clr-primary-7);
-  padding: 1rem 1rem;
+  padding: 3rem 1rem;
 }
 .form-section {
   padding: 1rem;
