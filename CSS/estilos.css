@@ -69,6 +69,10 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   --max-width: 1170px;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-white);
@@ -300,7 +304,7 @@ Navbar
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 5rem;
   background: var(--clr-white);
   box-shadow: var(--dark-shadow);
@@ -486,13 +490,14 @@ CARDS
 ////////////////////////////
 */
 .cards-section .section-title {
+  min-width: 100vw;
   margin-bottom: 1.5rem;
 }
 .cont-cards {
   -webkit-clip-path: polygon(50% 0%, 100% 2%, 100% 100%, 0 100%, 0 2%);
   clip-path: polygon(50% 0%, 100% 2%, 100% 100%, 0 100%, 0 2%);
   background: var(--clr-primary-7);
-  padding: 3rem 1rem;
+  padding: 6rem 0.5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
