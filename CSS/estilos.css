@@ -596,7 +596,7 @@ Products
 }
 .store {
   min-height: 100vh;
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 .products-section {
   padding: 0.5rem;
@@ -715,10 +715,6 @@ input[type="number"] {
     margin-bottom: 2rem;
     border-color: var(--clr-primary-7);
     width: 3rem;
-  }
-
-  .nav-bar {
-    display: none;
   }
 
   .product-quantity-desktop-center {
